@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+
+
+}
+.top-container{
+   background-image: url("IMG_20221010_055330_258.jpg");
+   height: 100vh;
+   background-size: cover;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+
+} 
+.top-container h1{
+    color: white;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+.text{
+    margin: 50px 5%;
+    font-family: sans-serif;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    justify-content:right;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+.navbar a img{
+    justify-content: left;
+    margin-left: -100%;
+}
+.navbar ul li a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    display: absolute;
+    overflow: hidden;
+    transition-duration: 1.5s;
+    
+    
+    
+}
+.navbar ul li a:hover{
+     color: red;
+}
+.navbar.active{
+    background-color: black;
+    
+}
+.navbar.active ul li a{
+    color: white;
+}
+.show-btn{
+    height: 10vh;
+    background-color:white;
+    font-weight: 800;
+    width: 30px;
+
+    
+ 
+}
+@media screen and (max-width : 900px){
+
+    .show-btn{
+        margin-top: -5%;
+        height: 3vh;
+    }
+  }
